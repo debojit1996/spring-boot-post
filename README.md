@@ -7,3 +7,13 @@
 * ***spring-boot-starter-data-r2dbc***: As an alternative to spring data JPA for the reactive stack
 * ***spring-boot-starter-webflux***: To write reactive REST endpoints
 * ***r2dbc-mysql***: MySQL driver for R2dbcEntityTemplate
+
+## Rest endpoint details
+* Endpoint: http://localhost:8080/employee/create
+* Request body expected:
+```
+ {
+    "name": "Hello",
+    "email": "hello@gmail.com"
+}
+```
