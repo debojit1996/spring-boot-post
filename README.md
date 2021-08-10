@@ -9,11 +9,26 @@
 * ***r2dbc-mysql***: MySQL driver for R2dbcEntityTemplate
 
 ## Rest endpoint details
-* Endpoint: http://localhost:8080/employee/create
+* POST Endpoint: http://localhost:8080/employee
 * Request body expected:
 ```
  {
     "name": "Hello",
     "email": "hello@gmail.com"
-}
+ }
 ```
+* GET Endpoints
+  * Get all employees: http://localhost/employee/all
+  * Get employee by Id: http://localhost/employee/{id} - Returns 404 if resource not found
+
+* DELETE Endpoint
+  * Delete employee by Id: http://localhost/employee/{id}
+
+* PATCH Endpoint
+  * Update employee name by Id: http://localhost/employee/{id} - Returns 404 if resource not found
+  * Expected request body:
+  ```
+  {
+    "name": "Hello"
+  }
+  ```  
